@@ -4,7 +4,7 @@ import { colors } from '@src/constants/default';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export function Card({number, name, icon}) {
+export function Card({number, name, icon}:any) {
     return (
         <View style={Styles.card}>
             <View style={Styles.leftContent}>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import 'react-native-gesture-handler';
-import { View, Text, TouchableOpacity, TextInput, Image, ScrollView, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, TextInput, Image, ScrollView, StyleSheet, SafeAreaView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { StatusBar } from 'expo-status-bar';
 import { Dashboard } from './screen/dashboard';
@@ -17,10 +17,10 @@ const App = () => {
   };
 
   return (
-    <>
+    <SafeAreaView>
       <StatusBar style='auto'></StatusBar>
       <Dashboard/>
-    </>
+    </SafeAreaView>
   );
 };
 
